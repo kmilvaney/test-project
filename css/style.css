@@ -1,0 +1,777 @@
+* {
+    /* padding: 0;
+    margin: 0;
+    box-sizing: inherit; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
+}
+/*
+body {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 10px;
+} */
+
+/*----------------------------------------------*/
+/*------------------- LOGO ---------------------*/
+/*----------------------------------------------*/
+
+.logo {
+    position: relative;
+    height: 100px;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 75px;
+    width: 150px;
+}
+
+
+/*----------------------------------------------*/
+/*------------------- SLIDER -------------------*/
+/*----------------------------------------------*/
+
+.slider {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+.slide:first-child {
+    background-image: url(../img/adult-bridal-bride-1043902.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.slide:nth-child(2) {
+    background-image: url(../img/riteofpassage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.slide:nth-child(3) {
+    background-image: url(../img/coachingnew.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.slide:nth-child(4) {
+    background-image: url(../img/celebration-craft-creative-949586.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+/*----------------------------------------------*/
+/*---------------- SLIDER BUTTONS --------------*/
+/*----------------------------------------------*/
+
+button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background: #fff;
+    color: #333;
+}
+
+/*----------------------------------------------*/
+/*-------------------- MENU --------------------*/
+/*----------------------------------------------*/
+
+.menu {
+    height: 100px;
+    position: relative;
+}
+
+#menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 15px;
+    font-size: 3em;
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+    border: 2px solid #444;
+    opacity: .7;
+    cursor: pointer;
+}
+
+#menu-title:hover {
+    opacity: 1;
+}
+
+
+.menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.menu a {
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    color: #444;
+    font-weight: bold;
+    opacity: .5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu a:hover {
+    opacity: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  transition: all 1s ease;
+  transform:translate(0, 0);
+  opacity: 0.95;
+  height: 60px;
+  box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+  -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+
+}
+
+/*----------------------------------------------*/
+/*--------------- SERVICE CARDS  ---------------*/
+/*----------------------------------------------*/
+#service-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px 0 40px 0;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #4b4b4b;
+}
+
+.serv-cards {
+  padding: 15px 25px;
+  width: 25%;
+  min-height: 35%;
+  background-color: #CAD3C8;
+  background-image: cover;
+  text-align: center;
+  box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
+  -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.45);
+  font-size: 16px;
+}
+
+.serv-cards h2 {
+    opacity: .9;
+}
+
+/* .card-color {
+  background-color: #CAD3C8;
+  /* margin: auto 0; */
+  /* padding: 15px;
+  height: 76%; */
+/*} */
+
+
+
+/*----------------------------------------------*/
+/*--------------- ABOUT SECTION  ---------------*/
+/*----------------------------------------------*/
+#about-wrapper {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  /* padding: 25px; */
+}
+
+#about-section {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+#about-pic {
+  align-self: flex-end;
+  margin-left: 25px;
+}
+
+.body-div, .hr-wrapper {
+  padding: 0 120px;
+}
+
+
+/*
+.about-section,
+.services-section,
+.qa-section,
+.contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    color: #444;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+}
+
+.about-section span,
+.services-section span,
+.qa-section span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about-section p,
+.services-section p,
+.qa-section p,
+.contact-section p {
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    padding: 50px 20px;
+    line-height: 25px;
+    text-indent: 25px;
+}
+
+.services-section ul {
+    margin-bottom: 30px;
+}
+
+.services-section li {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: bold;
+}
+*/
+
+/* Original Q/A
+.qa-section ul {
+    margin: 30px 0;
+}
+
+.qa-section li {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.qa-section li:nth-last-child(even) {
+    font-weight: bold;
+}
+
+*/
+
+/* Contact
+.contact-section {
+    border-bottom: none;
+}
+
+.contact {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.email {
+    font-weight: 300;
+    font-size: 1.6em;
+    margin: 5px;
+    text-align: center;
+}
+<<<<<<< HEAD
+
+*/
+
+/*----------------------------------------------*/
+/*--------------- COACHING SECTION  ------------*/
+/*----------------------------------------------*/
+
+#coaching h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#coaching h4 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: .90;
+  padding-top: 15px;
+}
+
+#coaching h5 {
+  padding-top: 15px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#coaching ul li {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  list-style: none;
+  border-left: 2px solid #000000;
+  padding-left: 15px;
+}
+
+#coaching p {
+  margin: 15 40px auto 40px;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+
+/*----------------------------------------------*/
+/*----------------- Q&A SECTION  ---------------*/
+/*----------------------------------------------*/
+
+#qa h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: .90;
+}
+
+#qa ul {
+  margin: 30px 0;
+  padding: 0;
+}
+
+#qa ul li {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+#qa li:nth-child(even) {
+  font-weight: bold;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+.qa {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+}
+[data-toggle~="collapse"] {
+    cursor: pointer;
+}
+
+
+/*----------------------------------------------*/
+/*--------------- CONTACT SECTION  -------------*/
+/*----------------------------------------------*/
+
+.btn {
+  /* background-color: #03C4EB; */
+  background-color: white;
+  color: black;
+}
+
+.contactform-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contactform-description {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.contactform-title-divider {
+  text-align: center;
+  width: 50px;
+  height: 3px;
+  background: #03C4EB;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.contactform-p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+#contact {
+  background: #CAD3C8;
+  padding: 80px 0;
+  position: relative;
+}
+
+#contact .info {
+  color: #333333;
+}
+
+/* Icons on left side of form */
+#contact .info i {
+  font-size: 32px;
+  color: #2C3A47;
+  float: left;
+}
+
+#contact .info p {
+  padding: 0 0 10px 50px;
+  line-height: 24px;
+}
+
+ #contact .form #sendmessage {
+  color: #03C4EB;
+  border: 1px solid #03C4EB;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contact .form button[type="submit"] {
+  background: #03C4EB;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #25d8fc;
+}
+/* Color of Font Awesome icons */
+.fas .fab {
+  color: #03C4EB;
+}
+
+/* Modal styling */
+.modal-parent-container {
+  background: #666666;
+  width: 600px;
+  height: 800px;
+  position: relative;
+  opacity: .2;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+  display: flex;
+}
+
+#successmsgdiv {
+padding: 20px;
+width: 1000px;
+height: 500px;
+
+/* margin: 0 auto;
+margin-top: 40px; */
+background: white;
+border-radius: 5px;
+position: absolute;
+/* top: 40px;
+left: 100px; */
+top: 20%;
+left: 20%;
+margin: -70px 0 0 -170px;
+display: none;
+}
+
+#successmsgbtn {
+display: inline-block;
+background-color:#03C4EB;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:2px;
+padding: 5px 15px;
+}
+
+#successmsgbtn:hover {
+cursor: pointer;
+opacity: .8;
+}
+#contact-submit {
+display: inline-block;
+background-color:#03C4EB;
+color:#ffffff;
+border-radius: 5px;
+text-align:center;
+margin-top:1px;
+padding: 5px 15px;
+}
+
+#contact-submit:hover {
+cursor: pointer;
+opacity: .8;
+}
+
+
+/*----------------------------------------------*/
+/*------------ SOCIAL MEDIA BUTTONS  -----------*/
+/*----------------------------------------------*/
+
+.social-icon ul {
+  text-align: center;
+
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+  float: center;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.fab {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fab: hover, .fas: hover {
+	opacity: 0.7;
+}
+.fas {
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa-facebook {
+	background: #3A5CA9;
+	color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-street-view {
+  background: #FF2D00;
+  color: white;
+}
+.fa-phone {
+  background: #C600FF;
+  color: white;
+}
+
+/*----------------------------------------------*/
+/*--------------- Media Queries  ---------------*/
+/*----------------------------------------------*/
+
+@media (max-width: 375px) {
+    .about-section,
+    .services-section,
+    #qa-section,
+    .contact-section {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    color: #444;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.3);
+    }
+}
+
+/* @media (max-width: 500px) { */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+    .slide {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px);
+    }
+
+    .menu {
+        position: relative;
+        /* display: inline; */
+        white-space: nowrap;
+    }
+
+    #service-container-wrapper {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-content: space-around;
+      padding: 0;
+    }
+
+    .serv-cards {
+      width: 90%;
+      margin-bottom: 15px;
+    }
+
+    .body-div, .hr-wrapper {
+      padding: 0 10px;
+    }
+
+    #about-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about-texts {
+      display: block;
+    }
+
+    #about-pic {
+      align-self: center;
+      width: 60%;
+      display: block;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      /* background-color: white; */
+      z-index: 1;
+      transition: all 1s ease;
+      transform:translate(0, 0);
+      opacity: 0.95;
+      /* height: 60px; */
+      box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+      -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+      -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.25);
+
+    }
+
+
+}
